@@ -1,0 +1,47 @@
+/* Base styles for hiding controls */
+.ytp-autohide .ytp-chrome-bottom,
+.ytp-autohide .ytp-chrome-top,
+.ytp-autohide .ytp-gradient-bottom,
+.ytp-autohide .ytp-gradient-top {
+	opacity: 0 !important;
+	transition: opacity 0.1s cubic-bezier(0.4, 0, 1, 1) !important;
+}
+
+/* Ensure controls are visible on hover even when the video is paused */
+.html5-video-player:hover .ytp-chrome-bottom,
+.html5-video-player:hover .ytp-chrome-top,
+.html5-video-player:hover .ytp-gradient-bottom,
+.html5-video-player:hover .ytp-gradient-top {
+	opacity: 1 !important;
+}
+
+/* Specific fullscreen controls */
+.ytp-fullscreen.ytp-autohide .ytp-chrome-bottom,
+.ytp-fullscreen.ytp-autohide .ytp-chrome-top,
+.ytp-fullscreen.ytp-autohide .ytp-gradient-bottom,
+.ytp-fullscreen.ytp-autohide .ytp-gradient-top {
+	opacity: 0 !important;
+}
+
+/* Toast notification styles */
+.yt-controls-toast {
+	position: fixed;
+	bottom: 80px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: rgba(28, 28, 28, 0.9);
+	color: white;
+	padding: 10px 16px;
+	border-radius: 4px;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 14px;
+	z-index: 9999;
+	pointer-events: none;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	opacity: 1;
+	transition: opacity 0.5s ease;
+}
+
+.yt-controls-toast-fadeout {
+	opacity: 0;
+}
