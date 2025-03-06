@@ -2,7 +2,7 @@
 	"manifest_version": 3,
 	"name": "YouTube Controls Auto-Hider",
 	"version": "1.0",
-	"description": "Automatically hides YouTube video controls when paused and shows them on hover.",
+	"description": "Automatically hides YouTube video controls when paused and shows them on hover. (Press Ctrl+M to manually hide or show the controls)",
 	"permissions": ["activeTab"],
 	"content_scripts": [
 		{
