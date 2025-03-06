@@ -66,7 +66,6 @@
 
 		// Play/Pause events
 		video.addEventListener("play", () => {
-			controlsManuallyHidden = false;
 			clearTimeout(hideTimeout);
 			stopMouseIdleTimer();
 		});
